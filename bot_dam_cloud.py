@@ -22,7 +22,7 @@ except:
 # 4. Cào 3 tin tức nóng nhất từ RSS VnExpress
 tin_tuc_str = ""
 try:
-    rss_res = requests.get("https://vnexpress.net/rss/tin-moi-nhat.rss", timeout=5)
+    rss_res = requests.get("https://tuoitre.vn/rss/tin-moi-nhat.rss", timeout=5)
     root = ET.fromstring(rss_res.content)
     items = root.findall('.//item')[:3]
     
