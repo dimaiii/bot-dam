@@ -1,0 +1,25 @@
+name: Bot Bao Thuc
+
+on:
+  schedule:
+    # Hẹn giờ chạy: 01:00 UTC (tương đương 08:00 sáng giờ Việt Nam)
+    - cron: '0 1 * * *'
+  workflow_dispatch: # Cho phép ông tự bấm chạy tay để test
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Cai dat Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Cai dat thu vien
+        run: pip install requests
+
+      - name: Kich hoat Bot
+        run: python bot_dam_cloud.py
