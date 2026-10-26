@@ -4,7 +4,7 @@ from datetime import date
 print("Đang tổng hợp dữ liệu buổi sáng...")
 
 # 1. Thời tiết Thái Bình
-thoi_tiet = requests.get("https://wttr.in/Thai_Binh?format=3").text.strip()
+thoi_tiet = requests.get("https://wttr.in/Thai_Binh?format=3&M").text.strip()
 
 # 2. Đếm ngược tới Tết
 ngay_hom_nay = date.today()
