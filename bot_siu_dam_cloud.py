@@ -60,7 +60,7 @@ QUOTE_DU_PHONG = [
     "Kỷ luật quan trọng hơn cảm hứng.",
     "Tốc độ thành công phải nhanh hơn tốc độ già đi của ba mẹ",
     "Hoa hồng là hoa hồng, hoa sen là hoa sen. Chỉ nên xem đừng nên so sánh. Chúng ta có thể lấy những mặt xuất sắc và ưu tú của người khác để làm gương, nhưng vẫn phải giữ lấy bản sắc của riêng mình",
-    "Khi bạn muốn thực hiện 1 điều gì, cả vụ trụ dường như hợp sức giúp bạn",
+    "Khi bạn muốn thực hiện 1 điều gì, cả vũ trụ dường như hợp sức giúp bạn",
     "Kiếm tiền có thể khổ nhưng xin tiền còn khổ hơn",
     "Danh dự mới là điều thiêng liêng cao quý nhất",
     """Trời có 4 mùa: Xuân Hạ Thu Đông
