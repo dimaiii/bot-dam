@@ -88,6 +88,8 @@ GHI_NGUON_ZEN = ""
 
 def lay_quote():
     """Trả về (nội dung quote, dòng ghi nguồn nếu có)."""
+    if random.random() < 0.7:
+        return random.choice(QUOTE_DU_PHONG), ""
     # Nguồn 1: ZenQuotes
     try:
         r = requests.get("https://zenquotes.io/api/random", timeout=5)
