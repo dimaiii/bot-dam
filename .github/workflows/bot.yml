@@ -1,0 +1,19 @@
+name: bao-cao-buoi-sang
+
+on:
+  schedule:
+    - cron: '7 1 * * *'   # khoảng 8h sáng giờ VN
+  workflow_dispatch:       # để bấm chạy thử bằng tay
+
+jobs:
+  gui-tin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - run: python bot_dam_cloud.py
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
