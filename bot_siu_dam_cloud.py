@@ -16,7 +16,7 @@ VN_TZ = ZoneInfo("Asia/Ho_Chi_Minh")
 # ---------------------------------------------------------------
 try:
     thoi_tiet = requests.get(
-        "https://wttr.in/Thai_Binh?format=3", timeout=10
+        "https://wttr.in/Thai_Binh?format=%c+%t&m", timeout=10
     ).text.strip()
 except Exception:
     thoi_tiet = "(không lấy được thời tiết)"
@@ -83,7 +83,7 @@ QUOTE_DU_PHONG = [
 ]
 
 # Dòng ghi nguồn, chỉ hiện khi quote lấy từ ZenQuotes (họ yêu cầu ghi nguồn)
-GHI_NGUON_ZEN = "\n*Quotes by <https://zenquotes.io/>*"
+GHI_NGUON_ZEN = ""
 
 
 def lay_quote():
